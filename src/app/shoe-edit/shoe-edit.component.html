@@ -1,0 +1,35 @@
+<div class="container mt-3">
+    <h2>Edit Shoe</h2>
+    <form (ngSubmit)="onSubmit()">
+      <div class="form-group">
+        <label for="id">ID</label>
+        <input type="number" id="id" [(ngModel)]="shoe.id" name="id" class="form-control" required>
+      </div>
+      <div class="form-group">
+        <label for="name">Name</label>
+        <input type="text" id="name" [(ngModel)]="shoe.name" name="name" class="form-control" required>
+      </div>
+      <div class="form-group">
+        <label for="brand">Brand</label>
+        <input type="text" id="brand" [(ngModel)]="shoe.brand" name="brand" class="form-control" required>
+      </div>
+      <div class="form-group">
+        <label for="price">Price</label>
+        <input type="number" id="price" [(ngModel)]="shoe.price" name="price" class="form-control" required>
+      </div>
+      <div class="form-group">
+        <label for="size">Size</label>
+        <input type="text" id="size" [(ngModel)]="shoe.size" name="size" class="form-control" required>
+      </div>
+      <div class="form-group">
+        <label for="color">Color</label>
+        <input type="text" id="color" [(ngModel)]="shoe.color" name="color" class="form-control" required>
+      </div>
+      <div class="form-group">
+        <label for="quantity">Quantity</label>
+        <input type="number" id="quantity" [(ngModel)]="shoe.quantity" name="quantity" class="form-control" required>
+      </div>
+      <button type="submit" class="btn btn-primary">Save</button>
+    </form>
+  </div>
+  

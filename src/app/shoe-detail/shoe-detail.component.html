@@ -1,0 +1,12 @@
+<div class="container mt-3" *ngIf="shoe">
+    <h2>Shoe Details</h2>
+    <p><strong>Name:</strong> {{ shoe.name }}</p>
+    <p><strong>Brand:</strong> {{ shoe.brand }}</p>
+    <p><strong>Price:</strong> {{ shoe.price }}</p>
+    <p><strong>Size:</strong> {{ shoe.size }}</p>
+    <p><strong>Color:</strong> {{ shoe.color }}</p>
+    <p><strong>Quantity:</strong> {{ shoe.quantity }}</p>
+    <button class="btn btn-secondary" [routerLink]="['/shoes', shoe.id, 'edit']">Edit</button>
+    <button class="btn btn-primary" [routerLink]="['/shoes']">Back to List</button>
+  </div>
+  
